@@ -151,6 +151,38 @@ p {
   line-height: 2em;
   margin-bottom: 20px;
 }
+.accordion-item {
+  background-color: rgba(48, 45, 61, 0.85);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #272638cc;
+}
+.accordion-header {
+  background: #3c3a50;
+  color: #a29bfe;
+  cursor: pointer;
+  padding: 18px 24px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+.accordion-header:hover {
+  background: #524e74;
+}
+.accordion-content {
+  display: none;
+  padding: 20px 24px;
+  color: #ddd;
+  font-size: 1.05rem;
+}
+.active .accordion-content {
+  display: block;
+}
+
 
 </style>
 </head>
@@ -173,22 +205,39 @@ p {
 </nav>
 </header>
 <main>
-<section id="introducao"><p><h1>Gamedevelopment</h1>
-<h2>Introdução</h2>
+<body>
+  <header> </header>
+
+  <main>
+    <div class="accordion">
+      <div class="accordion-item" id="introducao">
+        <button class="accordion-header">Introdução</button>
+        <div class="accordion-content">
+          <p>
 <p> Os jogos eletrônicos estão presentes na nossa vida há quase um século, carregando uma
         grande história de inovações tecnológicas e impactos culturais nas sociedades de forma
         global. Eles desempenham um papel crucial na indústria do entretenimento e na cultura
         popular, com uma história rica que remonta ao início da computação. <p> <p>Desde os primeiros
         jogos de computador até aos modernos jogos online e de realidade virtual, a importância
         dos jogos eletrónicos reside na sua capacidade de entreter, educar, socializar e até mesmo
-        fornecer terapia.
-        <p>
-
+        fornecer terapia.<p>
+            
         Curiosamente, os primeiros jogos não eram voltados ao entretenimento comercial, mas sim
         a experimentações tecnológicas.
-        <p><p></section>
-<section id="origem"><p><h2>Origem e Experimentos Iniciais</h2>
-<p> A história dos jogos eletrônicos começou como uma vertente experimental da ciência da
+        <p>
+        </div>
+      </div>
+      <!-- outras seções -->
+    </div>
+  </main>
+
+  <!-- script entra aqui embaixo -->
+</body>
+
+<div class="accordion-item" id="origem">
+  <button class="accordion-header">Origem e Experimentos Iniciais</button>
+  <div class="accordion-content">
+    <p><p> A história dos jogos eletrônicos começou como uma vertente experimental da ciência da
         computação, voltada inicialmente para aplicações acadêmicas e demonstrações
         tecnológicas, e não com propósitos comerciais.<p>
 
@@ -206,9 +255,14 @@ p {
 
           <p>Esses jogos evidenciam o início do potencial lúdico dos computadores, mesmo em uma
         época em que esses equipamentos eram caros, grandes e acessíveis apenas a
-        universidades e instituições de pesquisa.<p></p></section>
-<section id="industria-1970"><p><h2>A Emergência da Indústria de Jogos (1970)</h2>
-<p> Com o avanço da microeletrônica, foi possível miniaturizar circuitos e baratear os
+        universidades e instituições de pesquisa.<p></p>
+  </div>
+</div>
+
+<div class="accordion-item" id="industria-1970">
+  <button class="accordion-header">A Emergência da Indústria de Jogos (1970)</button>
+  <div class="accordion-content">
+    <p><p> Com o avanço da microeletrônica, foi possível miniaturizar circuitos e baratear os
         equipamentos. Isso permitiu a criação dos primeiros fliperamas (arcades) e dos consoles
         domésticos.<p>
 
@@ -226,9 +280,15 @@ p {
           <p>
         A década de 1970 consolidou os jogos como produtos comerciais, ainda que simples em
         termos gráficos e jogabilidade. A experiência era focada em desafios curtos e repetitivos,
-        voltados à obtenção de pontuações máximas.<p></p></section>
-<section id="explosao-1980"><p><h2>Explosão, a Saturação e a Crise dos Jogos (1980)</h2>
-<p> Durante os anos 1980, o mercado cresceu vertiginosamente, com a entrada de diversas
+        voltados à obtenção de pontuações máximas.<p></p>
+  </div>
+</div>
+
+<div class="accordion-item" id="explosao-1980">
+  <button class="accordion-header">Explosão, a Saturação e a Crise dos Jogos (1980)
+</button>
+  <div class="accordion-content">
+    <p><p> Durante os anos 1980, o mercado cresceu vertiginosamente, com a entrada de diversas
         empresas. <p>
         
           <p>
@@ -265,9 +325,15 @@ p {
 
           <p>A <strong>Nintendo</strong> salvou a indústria e deu início à ideia de jogos como experiências narrativas,
         indo além do desafio e da “pontuação”. <p>
-        </p></p></section>
-<section id="evolucao-1990"><p><h2>Evolução Tecnológica e Diversificação (1990)</h2>
-<p> Os anos 1990 foram marcados por transformações técnicas e narrativas: surgem consoles
+        </p>
+  </div>
+</div>
+
+</p><div class="accordion-item" id="evolucao-1990">
+  <button class="accordion-header">Evolução Tecnológica e Diversificação (1990)
+</button>
+  <div class="accordion-content">
+    <p><p> Os anos 1990 foram marcados por transformações técnicas e narrativas: surgem consoles
         de 16 e 32 bits, como Super <strong>Nintendo</strong>, Sega Genesis, <strong>PlayStation</strong> e <strong>Nintendo</strong> 64, que
         trazem gráficos mais ricos, efeitos sonoros avançados e novos gêneros de jogo.
         <p>
@@ -286,9 +352,15 @@ p {
         <p>
 
           <p>Essa década fortaleceu a ideia dos jogos como produtos culturais complexos, com valor
-        estético, narrativo e social.</p></p></section>
-<section id="era-contemporanea"><p><h2>A Era Contemporânea até os Dias Atuais</h2>
-<p> A partir dos anos 2000, os jogos eletrônicos atingem um novo patamar: consolidação dos
+        estético, narrativo e social.<p></p>
+  </div>
+</div>
+
+<div class="accordion-item" id="era-contemporanea">
+  <button class="accordion-header">A Era Contemporânea até os Dias Atuais
+</button>
+  <div class="accordion-content">
+    <p><p> A partir dos anos 2000, os jogos eletrônicos atingem um novo patamar: consolidação dos
         jogos online, uma diversificação e popularização de gêneros diferentes, a ascensão do
         profissionalismo competitivo como um tipo de entretenimento para o público e o cruzamento
         dos jogos com outras mídias (cinema, arte…).<p>
@@ -310,9 +382,15 @@ p {
 
           <p>Além disso, os jogos - games - passam a dialogar com o cinema, a literatura e as artes
         visuais. Títulos como The Last of Us e Red Dead Redemption 2 são exemplos de narrativa
-        cinematográfica no universo dos games.</p></p></section>
-<section id="mercado-gamer"><p><h2>Desenvolvimento de Jogos: O Mercado Gamer</h2>
-<p>
+        cinematográfica no universo dos games.<p></p>
+  </div>
+</div>
+
+<div class="accordion-item" id="mercado-gamer">
+  <button class="accordion-header">Desenvolvimento de Jogos: O Mercado Gamer
+</button>
+  <div class="accordion-content">
+    <p><p>
 Você sabia? Os videogames agora são os novos “gigantes do entretenimento”<br/>
 <p>
 
@@ -340,7 +418,7 @@ enquanto esperam o metrô, os games se tornaram parte da rotina global.<br/><p>
 A popularização dos jogos eletrônicos é um processo que se desenvolve de maneira<br/>
 contínua e estruturada há anos, mas que se intensificou consideravelmente nos últimos<br/>
 ciclos de inovação tecnológica. A introdução da nova geração de consoles — como o <strong>Xbox</strong><br/>
-Series S, o <strong>PlayStation 5</strong> e o <strong>Nintendo Switch</strong> — proporcionou avanços significativos em<br/>
+Series S, o <strong>PlayStation</strong> 5 e o <strong>Nintendo</strong> Switch — proporcionou avanços significativos em<br/>
 desempenho gráfico, tempos de carregamento e experiências de imersão. Paralelamente, a<br/>
 consolidação dos dispositivos móveis como plataformas de jogos robustas e acessíveis<br/>
 contribuiu decisivamente para a ampliação da base de usuários. Essa convergência entre<br/>
@@ -362,14 +440,20 @@ criatividade e até aprendizado. Plataformas como <strong>Twitch</strong> e <str
 ecossistema gamer, permitindo que o ato de jogar vá muito além da tela. Os games são<br/>
 palco de comunidades, torneios internacionais e até eventos ao vivo dentro dos próprios<br/>
 jogos, como concertos e lançamentos cinematográficos.<br/><p>
-
-  <p>
-Com o avanço das tecnologias imersivas, como realidade virtual e aumentada, inteligência<br/>
+    Com o avanço das tecnologias imersivas, como realidade virtual e aumentada, inteligência<br/>
 artificial e streaming em nuvem (<strong>Gamepass</strong>), a tendência é que os games se tornem cada<br/>
 vez mais presentes, mais acessíveis e mais integrados à vida cotidiana. <p>
-    </p></p></section>
-<section id="mercado-brasileiro"><p><h2>Desenvolvimento de Jogos: Como é no mercado Brasileiro?</h2>
-<p>
+    <p>
+</p>
+  </div>
+</div>
+
+
+<div class="accordion-item" id="mercado-brasileiro">
+  <button class="accordion-header">Desenvolvimento de Jogos: Como é no mercado Brasileiro?
+</button>
+  <div class="accordion-content">
+    <p><p>
 A indústria de games no Brasil, embora ainda seja considerada pequena em termos de<br/>
 produção nacional, vive um momento de expansão significativa e começa a ganhar<br/>
 protagonismo no cenário internacional. Em 2022, o mercado brasileiro movimentou <strong>US$ 2,7</strong><br/>
@@ -408,9 +492,14 @@ Esse conjunto de dados revela um setor em construção, mas com bases sólidas. 
 brasileira de games mostra criatividade, capacidade técnica e ambição para crescer e<br/>
 conquistar espaço no mercado global, transformando o país de um grande consumidor em<br/>
 um produtor cada vez mais relevante de conteúdo interativo digital.<p>
-    </p></p></section>
-<section id="como-criar-jogo"><p><h2>Como criar um jogo? O Desenvolvimento de jogos</h2>
-<p>
+    </p>
+  </div>
+</div>
+
+<div class="accordion-item" id="como-criar-jogo">
+  <button class="accordion-header">Como criar um jogo? O Desenvolvimento de jogos</button>
+  <div class="accordion-content">
+    <p><p>
         Como os jogos são feitos? Descubra o processo por trás do desenvolvimento de 
         um game!
         <p>
@@ -622,10 +711,14 @@ um produtor cada vez mais relevante de conteúdo interativo digital.<p>
         corrigir novos erros ou até adicionar conteúdos extras, deixando o jogo ainda mais 
         completo. Isso, inclusive, mantém o público com esperanças e o número de jogadores 
         se mantém/aumenta/continua fluído, evitando que o jogo seja esquecido.
-        </p>
-<section id="entrevista">
-<h2>Entrevista</h2>
-<p>Entrevistamos Davi Alvarenga, um desenvolvedor Sênior que atuou na empresa da <strong>Riot</strong>
+        <p></p>
+  </div>
+</div>
+
+<div class="accordion-item" id="entrevista">
+  <button class="accordion-header">Entrevista</button>
+  <div class="accordion-content">
+    <p><p>Entrevistamos Davi Alvarenga, um desenvolvedor Sênior que atuou na empresa da <strong>Riot</strong>
                 como Desenvolvedor Júnior por meio de um contrato com uma empresa de consultoria, e
                 permaneceu 2.5 anos trabalhando em vários projetos na área de desenvolvimento Web
                 para a <strong>Riot</strong>.<p></p>
@@ -777,10 +870,15 @@ um produtor cada vez mais relevante de conteúdo interativo digital.<p>
                 no mercado, mas que se têm pouco. É muito pouco explorada pelos desenvolvedores, mas
                 que as empresas gostam muito. As pessoas passam a te valorizar mais e você também
                 passa a se valorizar mais, porque você vê que dá conta da coisa. Tudo isso serve como um
-                aprendizado, no final das contas.
-                </p><section id="Conteúdos Relacionados">
-<h2>Conteúdos</h2>
-<p>1. Estatística Descritiva
+                aprendizado, no final das contas.</p>
+  </div>
+</div>
+
+
+                <div class="accordion-item" id="introducao">
+  <button class="accordion-header">Conteúdos Relacionados</button>
+  <div class="accordion-content">
+    <p><p>1. Estatística Descritiva
                     Análise de dados de gameplay: número de mortes por nível, tempo médio por fase, taxa de
                     conclusão, etc.
                     <p>
@@ -849,10 +947,24 @@ um produtor cada vez mais relevante de conteúdo interativo digital.<p>
                       ● Usar listas para armazenar as peças e suas posições.
                     <p>
                       ●  Criar lógica condicional para detectar vitória.
-                    <p>
+                    <p></p>
+  </div>
+</div>
+
+
               </p></section></section></p></section></main><script>
 function toggleMenu() {
   const menu = document.querySelector('nav ul');
   menu.classList.toggle('show');
 }
-</script></body></html>
+</script><script>
+  const headers = document.querySelectorAll('.accordion-header');
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>
